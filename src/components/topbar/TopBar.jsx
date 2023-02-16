@@ -5,7 +5,7 @@ import "./topbar.css";
 
 export default function Topbar() {
   const { user, dispatch } = useContext(Context);
-  const PF = "http://localhost:5000/images/"
+  const PF = "https://pillow-api.onrender.com/images/"
 
   const handleLogout = () => {
     dispatch({type:"LOGOUT"})
@@ -41,12 +41,12 @@ export default function Topbar() {
                 <ul className="topList">
                   
                   <li className="topListItem">
-                    <Link className="link" to="/login">
+                    <Link className="link" to="https://pillow-api.onrender.com/login">
                       LOGIN
                     </Link>
                   </li>
                   <li className="topListItem">
-                    <Link className="link" to="/register">
+                    <Link className="link" to="https://pillow-api.onrender.com/register">
                       REGISTER
                     </Link>
                   </li>
